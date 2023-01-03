@@ -119,7 +119,9 @@ export default function Home() {
                       {newsList?.hits?.map((news) => (
                         <Grid
                           item
-                          xs={3}
+                          xs={12}
+                          md={4}
+                          lg={3}
                           style={{ marginBottom: "40px" }}
                           key={news?.objectID}
                         >
