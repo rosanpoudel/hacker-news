@@ -118,7 +118,12 @@ export default function Home() {
                   ) : (
                     <>
                       {newsList?.hits?.map((news) => (
-                        <Grid item xs={3} style={{ marginBottom: "40px" }}>
+                        <Grid
+                          item
+                          xs={3}
+                          style={{ marginBottom: "40px" }}
+                          key={news?.objectID}
+                        >
                           <NewsCard news={news} />
                         </Grid>
                       ))}
