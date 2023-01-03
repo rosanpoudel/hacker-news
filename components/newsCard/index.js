@@ -52,7 +52,7 @@ const NewsCard = ({ news }) => {
               title={`Total points: ${news?.points}`}
             >
               <Badge
-                color="secondary"
+                color="success"
                 badgeContent={news?.points}
                 max="9999999999999"
               >
