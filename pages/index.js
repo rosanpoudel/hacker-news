@@ -67,9 +67,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Posts page</title>
+        <title>Hackers news</title>
         <meta name="description" content="Home page" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <>
         <Container maxWidth="xl">
