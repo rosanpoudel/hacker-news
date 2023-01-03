@@ -22,7 +22,7 @@ const NewsCard = ({ news }) => {
       <CardMedia
         component="img"
         alt="news image"
-        height="180"
+        height="210"
         image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV0FUVsKTZpxNUQf76k5zha9ilTAwXF9R3DFhSn-Rs&s"
       />
       <CardContent>
