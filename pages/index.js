@@ -25,7 +25,7 @@ export default function Home() {
         setNewsList(news);
       }
     } catch (err) {
-      setNewsList({});
+      setNewsList({ hits: [] });
     }
   };
 
@@ -105,7 +105,7 @@ export default function Home() {
             </div>
           </div>
           {/* cards */}
-          <div>
+          <div className="cards-wrapper">
             {fetchingNews ? (
               <NewsSkeleton />
             ) : (
