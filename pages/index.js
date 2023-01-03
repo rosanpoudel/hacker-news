@@ -41,6 +41,7 @@ export default function Home() {
     const value = e.target.value;
     handleSearchDebounce(value);
     setSearchQuery(value);
+    setFilterCategory("story");
     if (value?.length > 0) {
       setActivePage("0");
     } else {
@@ -50,7 +51,7 @@ export default function Home() {
 
   const handleSearchDebounce = useCallback(
     debounce(async (value) => {
-      fetchNewsLists(0, value, filterCategory);
+      fetchNewsLists(0, value, "story");
     }, 700),
     []
   );
