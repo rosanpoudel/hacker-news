@@ -6,7 +6,14 @@ const NewsSkeleton = () => {
     <div className="skeleton">
       <Grid container spacing={4}>
         {[...Array(10)]?.map((data, index) => (
-          <Grid item xs={3} style={{ marginBottom: "40px" }} key={index}>
+          <Grid
+            item
+            xs={12}
+            md={4}
+            lg={3}
+            style={{ marginBottom: "40px" }}
+            key={index}
+          >
             <Skeleton variant="rectangular" width="100%" height={210} />
             <br />
             <Skeleton height={30} width="60%" />
